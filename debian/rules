@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-	dh $@
+	dh $@ --buildsystem=lua --with lua
+
+override_dh_auto_configure:
+	perl -i -pe s/resty/nginx/g lib/resty/*.lua
+	dh_auto_configure
+
+override_dh_auto_clean:
+	dh_auto_clean
+	perl -i -pe s/nginx/resty/g lib/resty/*.lua

@@ -1,5 +1,24 @@
-template-repository (1.0-1) unstable; urgency=medium
+lua-nginx-string (0.11-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
+  * Bump Standards-Version to 4.1.4.
+    * Change Format in copyright to https.
+  * Bump compat to 11.
+  * Update Vcs-* fields to salsa.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 24 Apr 2018 14:53:17 +0800
+
+lua-nginx-string (0.10-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.0.1.
+  * Bump compat to 10.
+  * Update Vcs-* fields.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 19 Aug 2017 10:55:41 +0800
+
+lua-nginx-string (0.09-1) unstable; urgency=low
+
+  * Initial release. Closes: #805603
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Fri, 20 Nov 2015 10:34:05 +0800

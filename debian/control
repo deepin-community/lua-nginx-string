@@ -1,15 +1,18 @@
-Source: template-repository
-Section: unknown
+Source: lua-nginx-string
+Maintainer: ChangZhuo Chen (陳昌倬) <czchen@debian.org>
+Section: interpreters
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper (>= 11),
+               dh-lua,
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/debian/lua-nginx-string
+Vcs-Git: https://salsa.debian.org/debian/lua-nginx-string.git
+Homepage: https://github.com/openresty/lua-resty-string
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: lua-nginx-string
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: String utilities for the nginx embedded Lua language
+ lua-nginx-string provides the string utilities and common hash functions for
+ the nginx embedded Lua language.
